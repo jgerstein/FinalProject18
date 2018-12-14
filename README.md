@@ -2,6 +2,7 @@
 
 * Project details are in description.md
 * Replace the content of this file with your own info about your project before the due date
+* Don't forget to fill out the [Project Proposal Form](https://airtable.com/shrrdA41unoBvi6Ki) before break.
 
 ## Setting Up Your Repo
 
