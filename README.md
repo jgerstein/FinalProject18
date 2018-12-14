@@ -2,3 +2,7 @@
 
 * Project details are in description.md
 * Replace the content of this file with your own info about your project before the due date
+
+## Setting Up Your Repo
+
+On the GitHub page for this repository, click the "Fork" button. This will create your own copy of this repository, linked to my original. Use the same cloning method we used before to clone the repository to your PythonAnywhere account
