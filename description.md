@@ -34,11 +34,11 @@ Excellent work will include:
 
 | Date | Checkpoint |
 |------|------------|
-| Jan 2/3 | Project proposal due (form will be provided)|
-| Jan 8/9 | First code checkpoint |
-| Jan 14/15 | Second code checkpoint |
-| Jan 18/22 | Third code checkpoint |
-| FInal exam | Code due, all students will present their work |
+| Before Break | Project proposal due (form will be provided)|
+| Jan 4/7 | First code checkpoint |
+| Jan 10/11 | Second code checkpoint |
+| Jan 16/17 | Third code checkpoint |
+| Final exam | Code due, all students will present their work |
 
 ## Alternatives
 
