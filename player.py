@@ -10,6 +10,9 @@ while not done:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
+    pressed = pygame.key.get_pressed()
+    if pressed[pygame.K_SPACE]:
+        done = True
 
     screen.blit(functions.get_image("chessboard.png"), (0,0))
         
