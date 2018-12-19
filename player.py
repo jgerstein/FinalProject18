@@ -1,9 +1,9 @@
 import pygame
+import functions
 
 pygame.init()
 screen = pygame.display.set_mode((600,600))
 clock = pygame.time.Clock()
-chessboard = pygame.image.load("chessboard.png")
 done = False
 
 while not done:
@@ -11,7 +11,8 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
 
-    screen.blit(chessboard, (0,0))
-    
+    screen.blit(functions.get_image("chessboard.png"), (0,0))
+        
     pygame.display.flip()
     clock.tick(60)
+
