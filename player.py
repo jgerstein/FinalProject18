@@ -12,31 +12,32 @@ done = False
 pos_x_list = constants.pos_x_list
 pos_y_list = constants.pos_y_list
 
-print(pos_x_list)
-print(pos_y_list)
-
 class Piece(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = constants.get_image("pieces/pd.png")
+        self.image = pygame.Surface((45, 45))
+        self.image.fill((128, 128, 128))
         self.rect = self.image.get_rect()
 
+class Enemy_Pawn(Piece):
+    def __init__(self):
+        super().__init__()
+        self.image = constants.get_image("pieces/pd.png")
+
 for i in range(20):
-    print(i)
-    piece = Piece()
+    enemy_pawn = Enemy_Pawn()
     axis = random.choice(constants.axis_list)
     if axis == 'x':
         rect_x = random.choice(pos_x_list)
-        piece.rect.x = rect_x
-        piece.rect.y = random.choice(constants.far_close_list)
+        enemy_pawn.rect.x = rect_x
+        enemy_pawn.rect.y = random.choice(constants.far_close_list)
         pos_x_list.remove(rect_x)
     elif axis == 'y':
         rect_y = random.choice(pos_y_list)
-        piece.rect.x = random.choice(constants.far_close_list)
-        piece.rect.y = rect_y
+        enemy_pawn.rect.x = random.choice(constants.far_close_list)
+        enemy_pawn.rect.y = rect_y
         pos_y_list.remove(rect_y)
-
-    all_sprites_list.add(piece)
+    all_sprites_list.add(enemy_pawn)
 
 while not done:
     for event in pygame.event.get():
